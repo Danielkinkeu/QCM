@@ -16,8 +16,8 @@
   <widget class="QLabel" name="label_note">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>20</y>
+     <x>20</x>
+     <y>110</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -25,7 +25,6 @@
    <property name="font">
     <font>
      <pointsize>16</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -36,11 +35,14 @@
   <widget class="QLabel" name="note_text">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>110</y>
+     <x>170</x>
+     <y>190</y>
      <width>291</width>
      <height>161</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -49,11 +51,14 @@
   <widget class="QPushButton" name="EXIT">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>370</y>
+     <x>470</x>
+     <y>390</y>
      <width>151</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red</string>
    </property>
    <property name="text">
     <string>EXIT</string>
@@ -62,8 +67,8 @@
   <widget class="QLabel" name="label_date">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>10</y>
+     <x>440</x>
+     <y>110</y>
      <width>221</width>
      <height>31</height>
     </rect>
@@ -71,12 +76,33 @@
    <property name="font">
     <font>
      <pointsize>14</pointsize>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
    <property name="text">
     <string>DATE</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;
+color: white;
+font-size: 50px;
+justify-content: center;
+text-align: center;
+
+</string>
+   </property>
+   <property name="text">
+    <string>QCM Queen</string>
    </property>
   </widget>
  </widget>

@@ -52,8 +52,8 @@ void MakeTest::on_pushButton_add_clicked()
 
      if(counter_trunc==0)
      {
-        quest_file.open(t.getTexte()+".txt",ios::trunc);
-     } else{ quest_file.open(t.getTexte()+".txt",ios::app);}
+        quest_file.open("quest_rep.txt",ios::trunc);
+     } else{ quest_file.open("quest_rep.txt",ios::app);}
 
      int verifier_reponse=0;
      foreach (QLineEdit* c, reponses_)
@@ -93,7 +93,7 @@ void MakeTest::on_pushButton_exit_clicked()
      QString ti=ui->title->text();
      Question t(ti.toStdString());
 
-    string question_rep=t.getTexte();
+    string question_rep="quest_rep.txt";
     ifstream myfile(question_rep);
     string buffer;
     getline(myfile,buffer);

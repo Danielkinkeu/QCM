@@ -1,4 +1,5 @@
 #include "qcm.h"
+#include <windows.h>
 #include "ui_qcm.h"
 #include "question.h"
 #include "MakeTest.h"
@@ -36,5 +37,24 @@ void Qcm::on_addQcm_clicked()
 {
     MakeTest* t= new MakeTest(this);
     t->show();
+}
+
+
+void Qcm::on_listQcm_clicked()
+{
+    std::string fileName = "quest_rep.txt";
+    std::string command = "notepad.exe " + fileName;
+    system(command.c_str());
+
+
+}
+
+
+void Qcm::on_pushButton_clicked()
+{
+    string question_rep="quest_rep.txt";
+    ifstream myfile(question_rep);
+    close();
+    myfile.close();
 }
 

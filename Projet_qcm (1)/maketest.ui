@@ -88,6 +88,9 @@
         <pointsize>20</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:red</string>
+      </property>
       <property name="text">
        <string>ATTENTION: VEUILLEZ AJOUTER &quot;-&gt; &quot; AVANT LES REPONSES CORRECTES.</string>
       </property>
@@ -103,7 +106,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Exemple: &quot;-&gt; Encapsulation&quot;</string>
+         <string>Exemple: &quot;-&gt; vrai&quot;</string>
         </property>
        </widget>
       </item>
@@ -262,6 +265,9 @@
      <pointsize>18</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:yellow</string>
    </property>
    <property name="text">
     <string>Notons biens que 2 à 5 réponses peuvent être ajouter.</string>

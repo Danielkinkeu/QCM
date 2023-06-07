@@ -69,6 +69,6 @@ void NOTE::on_EXIT_clicked()
    /* ofstream quest_file;
     quest_file.open("Note.txt",ios::trunc);
     quest_file.close();*/
-    QMessageBox::information(this,"FIN QCM","BONNE VACANCES!!!");
+    QMessageBox::information(this,"FIN QCM","Good Bye !!!");
     exit(0);
 }

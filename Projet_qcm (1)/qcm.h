@@ -18,6 +18,12 @@ public:
 private slots:
     void on_addQcm_clicked();
 
+    void on_listQcm_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_clicked(bool checked);
+
 private:
     Ui::Qcm *ui;
 };

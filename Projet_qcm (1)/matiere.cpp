@@ -31,6 +31,7 @@ void Matiere::on_AjouterMatiere_clicked()
 
         fs::create_directory(name_trs);
 //        Matiere::m.push_back(name_trs);
+        mat = name_trs;
         ui->matiere->setText("");
         ui->matiere->setText("");
         QMessageBox::information(this,"saved","la matiere a bien ete sauvegarder");

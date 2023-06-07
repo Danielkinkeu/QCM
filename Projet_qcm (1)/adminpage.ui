@@ -22,8 +22,8 @@
   <widget class="QPushButton" name="make_test">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>30</y>
+     <x>20</x>
+     <y>130</y>
      <width>131</width>
      <height>31</height>
     </rect>
@@ -36,6 +36,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue</string>
+   </property>
    <property name="text">
     <string>concevoir QCM</string>
    </property>
@@ -43,8 +46,8 @@
   <widget class="QPushButton" name="add_etudiant">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>90</y>
+     <x>100</x>
+     <y>220</y>
      <width>131</width>
      <height>31</height>
     </rect>
@@ -64,8 +67,8 @@
   <widget class="QPushButton" name="exit">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>90</y>
+     <x>310</x>
+     <y>310</y>
      <width>88</width>
      <height>27</height>
     </rect>
@@ -77,15 +80,22 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;</string>
+   </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
    </property>
   </widget>
   <widget class="QPushButton" name="add_enseignant">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>150</y>
+     <x>440</x>
+     <y>220</y>
      <width>131</width>
      <height>31</height>
     </rect>
@@ -105,8 +115,8 @@
   <widget class="QPushButton" name="add_matiere">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>210</y>
+     <x>530</x>
+     <y>130</y>
      <width>131</width>
      <height>31</height>
     </rect>
@@ -119,8 +129,33 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue</string>
+   </property>
    <property name="text">
     <string>Ajouter Matiere</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>741</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;
+color: white;
+font-size: 50px;
+justify-content: center;
+text-align: center;
+
+</string>
+   </property>
+   <property name="text">
+    <string>QCM Queen</string>
    </property>
   </widget>
  </widget>

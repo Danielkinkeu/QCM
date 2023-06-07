@@ -14,6 +14,7 @@ class Matiere : public QDialog
 
 public:
     explicit Matiere(QWidget *parent = nullptr);
+    string mat;
     ~Matiere();
 
 private slots:

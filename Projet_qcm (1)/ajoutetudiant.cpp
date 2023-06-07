@@ -41,7 +41,7 @@ void AjoutEtudiant::on_ajouter_clicked()
          quest_file<<"{"+pass_trs<<endl;
          ui->name_edit->setText("");
          ui->pass_edit->setText("");
-         QMessageBox::information(this,"saved","student has been saved");
+         QMessageBox::information(this,"saved","etudiant Enregistre avec succes");
           ++counter_trunc;
      }
      quest_file.close();
@@ -57,11 +57,11 @@ void AjoutEtudiant::on_exit_clicked()
 
     if(buffer=="")
     {
-        QMessageBox::information(this,"DANGER DANGER!!!","Not a single student has been added");
+        QMessageBox::information(this,"DANGER DANGER!!!","pas d'etudiant enregistre");
     }else
     {
         close();
-        QMessageBox::information(this,"DANGER DANGER!!!","ALL Students are saved.\n No more modifications are allowed!!!");
+        QMessageBox::information(this,"DANGER DANGER!!!","tout les etudiats sont enregistren.\n No more modifications are allowed!!!");
     }
     myfile.close();
 }

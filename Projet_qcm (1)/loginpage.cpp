@@ -99,7 +99,7 @@ void LoginPage::on_pushButton_log_clicked()
     if(user_t=="" && user_p==""){
         QMessageBox::information(this,"WARNING!","please enter a correct id");
     }
-    else if(user_t == "admin" && user_p =="admin"){
+    else if(user_t == "king" && user_p =="king"){
         ui->lineEdit_U->setText("");
         ui->lineEdit_P->setText("");
         AdminPage *a=new AdminPage;
@@ -112,14 +112,14 @@ void LoginPage::on_pushButton_log_clicked()
         bool check_pass2=trouver_p2('{',user_p.toStdString());
         if (check_name && check_pass)
         {
-             QMessageBox::information(this,"Login","Good luck!");
+//             QMessageBox::information(this,"Login","Good luck!");
              close();
 
              MainWindow * m = new MainWindow(this);
              m->set_name(user_t.toStdString());
              m->show();
         }else if(check_name2 && check_pass2){
-             QMessageBox::information(this,"Login","Good luck!");
+//             QMessageBox::information(this,"Login","Good luck!");
              close();
              Qcm * q = new Qcm(this);
              Enseignant * e = new Enseignant(this);

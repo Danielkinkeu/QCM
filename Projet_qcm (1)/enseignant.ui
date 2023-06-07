@@ -13,11 +13,14 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="layoutWidget_3">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>20</y>
+     <y>90</y>
      <width>200</width>
      <height>24</height>
     </rect>
@@ -50,6 +53,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red</string>
+   </property>
    <property name="text">
     <string>EXIT</string>
    </property>
@@ -59,7 +65,7 @@
     <rect>
      <x>40</x>
      <y>220</y>
-     <width>88</width>
+     <width>131</width>
      <height>27</height>
     </rect>
    </property>
@@ -68,15 +74,18 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:blue</string>
+   </property>
    <property name="text">
-    <string>ADD</string>
+    <string>Ajouter Enseignant</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget_4">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>80</y>
+     <y>130</y>
      <width>200</width>
      <height>24</height>
     </rect>
@@ -93,6 +102,28 @@
      <widget class="QLineEdit" name="pass_edit_2"/>
     </item>
    </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;
+color: white;
+font-size: 50px;
+justify-content: center;
+text-align: center;
+
+</string>
+   </property>
+   <property name="text">
+    <string>QCM Queen</string>
+   </property>
   </widget>
  </widget>
  <resources/>
